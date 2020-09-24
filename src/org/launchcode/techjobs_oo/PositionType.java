@@ -10,12 +10,24 @@ public class PositionType {
         nextId++;
     }
 
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        return this.id == ((PositionType)obj).id;
+    }
+
     public PositionType(String value) {
         this();
         this.value = value;
     }
 
-    // TODO: Add a custom toString() method that returns the data stored in 'value'.
+    public String toString() {
+        return this.value;
+    }
 
     // TODO: Add custom equals and hashCode methods. Consider two PositionType objects "equal" when
     //  their id fields match.

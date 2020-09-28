@@ -87,4 +87,22 @@ public class Job {
 
     // TODO: Add getters for each field EXCEPT nextId. Add setters for each field EXCEPT nextID
     //  and id.
+
+
+    @Override
+    public String toString() {
+
+
+
+
+
+        return
+                "\nID: " + id +
+                "\nName: " + (null == name ? "Data Not Available" : name) +
+                "\nEmployer: " + (null == employer ? "Data Not Available" : employer) +
+                "\nLocation: " + (null == location ? "Data Not Available" : location) +
+                "\nPositionType: " + positionType +
+                "\nCoreCompetency: " + coreCompetency;
+
+    }
 }
